@@ -1,0 +1,47 @@
+.stylish-input-group .input-group-addon{
+	background: white; 
+}
+
+.stylish-input-group .form-control{
+	border-left: 0; 
+	box-shadow: 0 0 0; 
+	border-color: #ccc;
+}
+
+.stylish-input-group button{
+	border: 0;
+	background:transparent;
+}
+
+.content {
+	width: 30%;
+	height: 43px;
+}
+
+.options {
+	border-left: 1px solid #ddd;
+	width: 10%;
+	min-width: 58px;
+}
+
+.options .edit {
+	width: 50%;
+	float: left;
+	display: inline;
+	font-size: 24px;
+}
+
+.options .delete {
+	width: 50%;
+	min-width: 24;
+	float: left;
+	font-size: 24px;
+}
+
+.new-contact .form-inline {
+	margin-bottom: 10px;
+}
+
+#search {
+	margin-bottom: 20px;
+}
