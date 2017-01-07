@@ -31,6 +31,13 @@ app.factory('ContactFactory', function(localStorageService, $window) {
 			localStorageService.set('contactsList', contactsList);
 		},
 
+		updateContact: function(index, name, email, city) {
+			var contactsList = this.getContactsList();
+			
+			contactsList[index] = { name: name, email: email, city: city };
+			localStorageService.set('contactsList', contactsList);
+		},
+
 		getContactInfo: function(index) {
 			var contactsList = this.getContactsList();
 

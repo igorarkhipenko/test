@@ -42,6 +42,11 @@ app.controller('mainCtrl', function($scope, ContactFactory, localStorageService)
 		ContactFactory.removeContact(index);
 		$scope.contacts = ContactFactory.getContactsList();
 	}
+
+	$scope.updateContact = function(index, contact) {
+		ContactFactory.updateContact(index, contact.name, contact.email, contact.city);
+		$scope.contacts = ContactFactory.getContactsList();
+	}
 })
 
 app.controller('contactCtrl', function($scope, $routeParams, ContactFactory) {
