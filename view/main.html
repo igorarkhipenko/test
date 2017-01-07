@@ -45,7 +45,7 @@
 				</td>
 				<td class="options text-center">
 					<i class="fa fa-pencil edit" aria-hidden="true" ng-click='isEditing = !isEditing' ng-show="!isEditing"></i>
-					<i class="fa fa-check edit" aria-hidden="true" ng-click='isEditing = !isEditing' ng-show="isEditing"></i>
+					<i class="fa fa-check edit" aria-hidden="true" ng-click='isEditing = !isEditing; updateContact($index, contact);' ng-show="isEditing"></i>
 					<i class="fa fa-times delete" aria-hidden="true" ng-click="removeContact($index)"></i>
 				</td>
 			</tr>
